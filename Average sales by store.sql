@@ -1,0 +1,1 @@
+SELECT (SUM (sale_dollars) / COUNT(store_name) ) AS Average_sales FROM `bigquery-public-data.iowa_liquor_sales.sales`

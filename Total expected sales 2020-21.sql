@@ -1,0 +1,1 @@
+SELECT DISTINCT (ts.city), MAX(ts.sale_dollars) AS Sales FROM `bigquery-public-data.iowa_liquor_sales_forecasting.2020_sales_train` ts INNER JOIN `bigquery-public-data.iowa_liquor_sales_forecasting.2021_sales_predict` ps ON ts.city=ps.city GROUP BY ts.city ORDER BY Sales DESC
